@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Dashboard",
+    "icon": "dashboard",
+    "link": "/"
+  },
+  {
+    "title": "Users",
+    "icon": "users",
+    "link": "/users"
+  },
+  {
+    "title": "Settings",
+    "icon": "settings",
+    "link": "/settings"
+  },
+  {
+    "title": "Notice",
+    "icon": "notice",
+    "link": "/notice"
+  }
+]
