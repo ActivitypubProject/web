@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-type AvatarProps = {
+export type AvatarProps = {
   src: string;
   alt?: string;
   width?: number | string;

@@ -8,18 +8,18 @@ const Layout: Layout = ({ children }) => {
   return (
     <div className="h-full">
       {Header &&
-        <header className="h-1/6 border-blue-400 border-solid bg-slate-400">
+        <header className="h-1/6 border-solid border-white">
           {Header}
         </header>
       }
 
       <div className="flex h-5/6">
         {SideBar &&
-          <nav className="flex-none w-1/4 bg-zinc-500">
+          <nav className="flex-none w-1/4 border-solid border-white">
             {SideBar}
           </nav>
         }
-        <main className="flex-1 bg-neutral-700">
+        <main className="flex-1 border-solid border-white">
           {Main}
         </main>
       </div>

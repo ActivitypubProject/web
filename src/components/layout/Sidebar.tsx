@@ -1,22 +1,17 @@
 import { FC } from "react";
-
-export type sidebarItem = {
-  icon: string;
-  text: string;
-  clickHandler?: any;
-}
+import SidebarItem, { SidebarItemProps } from "../materials/SidebarItem";
 
 interface sidebarProps {
-  items: sidebarItem[];
+  items: SidebarItemProps[];
 }
 
 const Sidebar: FC<sidebarProps> = ({ items }) => {
   return (<div className="h-full w-full">
-    {/* {
-      items.map((item) => {
-
+    {
+      items.map((item, index) => {
+        return <SidebarItem key={index} {...item} />
       })
-    } */}
+    }
   </div>)
 }
 
