@@ -30,7 +30,7 @@ const Button: FC<buttonProps> = ({
   }
 
   bgColor = `bg-${color}-400`;
-  hoverColor = `hover:bg-${color}-500`;
+  hoverColor = `hover:bg-${color}-600`;
   textColor = "text-white";
 
   return (

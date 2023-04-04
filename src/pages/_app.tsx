@@ -3,19 +3,13 @@ import Layout from '@/components/layout';
 import type { AppProps } from 'next/app';
 import Avatar from '@/components/materials/Avatar';
 import Button from '@/components/materials/Button';
+import Icon from '@/components/materials/Icon';
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className='h-screen w-screen'>
-      <div className='p-4'>
-        <Button text="Tweet" color='green' size='large' clickHandler={() => { window.alert(123) }} />
-      </div>
-      <Layout>
-        <Layout.Header></Layout.Header>
-        <Layout.Main></Layout.Main>
-        <Layout.Sidebar></Layout.Sidebar>
-        <Layout.Footer></Layout.Footer>
-      </Layout>
+    <div className='h-screen w-screen bg-black'>
+      <Icon icon='home'></Icon>
+      123
     </div>
   )
 }
