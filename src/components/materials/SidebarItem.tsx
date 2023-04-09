@@ -5,16 +5,19 @@ export interface SidebarItemProps {
   icon: string;
   text: string;
   clickHandler: () => void;
+  color?: string;
 }
 
-const SidebarItem: React.FC<SidebarItemProps> = ({ icon, text, clickHandler }) => {
+const SidebarItem: React.FC<SidebarItemProps> = ({ icon, text, clickHandler, color = "white" }) => {
+  const active = false;
+  const activeColor = "green"
   return (
     <div
-      className="flex items-center gap-4 text-center p-2 cursor-pointer text-white  rounded"
+      className="flex items-center gap-6 text-center cursor-pointer text-white rounded p-5"
       onClick={clickHandler}
     >
-      <Icon size="medium" icon={icon} />
-      <span className="text-sm font-semibold">{text}</span>
+      <Icon type={icon} size="large"></Icon>
+      <span className={`text-lg font-semibold text-${color}`}>{text}</span>
     </div>
   );
 };

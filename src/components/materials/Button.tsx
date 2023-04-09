@@ -16,7 +16,7 @@ const Button: FC<buttonProps> = ({
   let bgColor, textColor, hoverColor, width, height;
   switch (size) {
     case "medium":
-      width = "w-44"
+      width = "w-48"
       height = "h-11"
       break;
     case "large":
@@ -29,8 +29,8 @@ const Button: FC<buttonProps> = ({
       break;
   }
 
-  bgColor = `bg-${color}-400`;
-  hoverColor = `hover:bg-${color}-600`;
+  bgColor = `bg-green-400`;
+  hoverColor = `hover:bg-green-600`;
   textColor = "text-white";
 
   return (

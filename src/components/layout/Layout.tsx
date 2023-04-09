@@ -15,7 +15,7 @@ const Layout: Layout = ({ children }) => {
 
       <div className="flex h-5/6">
         {SideBar &&
-          <nav className="flex-none w-1/4 border-solid border-white">
+          <nav className="flex-none w-1/4 border-solid border-white flex items-center justify-center">
             {SideBar}
           </nav>
         }
